@@ -1,0 +1,11 @@
+name: 研究一下github actions
+
+on:
+    push:
+        branches: [ main ]
+jobs:
+    echo-jobs:
+        runs-on: ubuntu-latest
+        steps:
+        - name: 运行echo命令
+          run: echo "success"
